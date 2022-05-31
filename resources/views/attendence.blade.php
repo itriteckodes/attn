@@ -18,11 +18,10 @@
 </head>
 <body>
     <img style="margin-top:60px"  src="{{asset('uos.png')}}" height="100"  width="120" alt="" srcset="">
-        <h1>Your Attendence was marked</h1>
+        <h1>Attendence was marked</h1>
         <br>
         <p color="black">Attendence was marked on {{Carbon\Carbon::now()->format('d/m/Y')}}</p>
         <br>
-        <p>Your MiyPromo team</p>
 
 </body>
 </html>
