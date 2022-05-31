@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Mail;
 class AttendenceController extends Controller
 {
    public function mark_attendence(Request $request){
-       $student = Student::where('roll_no',$request->roll_no)->first();
+       $student = Student::where('name',$request->name)->first();
     Attendence::create([
         'student_id' => $student->id,
         'time' => Carbon::now()
