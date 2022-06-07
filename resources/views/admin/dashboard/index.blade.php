@@ -10,9 +10,9 @@
             <div class="card card-custom bg-danger card-stretch gutter-b">
                 <!--begin::Body-->
                 <div class="card-body my-3">
-                    <a href="#" class="card-title font-weight-bolder text-light text-hover-state-dark font-size-h6 mb-4 d-block">Total Tournament</a>
+                    <a href="#" class="card-title font-weight-bolder text-light text-hover-state-dark font-size-h6 mb-4 d-block">Total Students</a>
                     <div class="font-weight-bold text-muted font-size-sm">
-                    <span class="text-light font-size-h2 font-weight-bolder mr-2">23</span></div>
+                    <span class="text-light font-size-h2 font-weight-bolder mr-2">{{App\Models\Student::count()}}</span></div>
                 </div>
                 <!--end:: Body-->
             </div>
@@ -57,7 +57,7 @@
             </div>
             <!--end::Stats Widget 21-->
         </div> --}}
-       
+
     </div>
-    
+
 @endsection

@@ -185,7 +185,7 @@
 								<!--begin::User-->
 								<div class="topbar-item">
 									<div class="btn btn-icon w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
-										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">John Doe</span>
+										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Admin</span>
 										<span class="symbol symbol-35 symbol-light-success">
 											<span class="symbol-label font-size-h5 font-weight-bold">S</span>
 										</span>
@@ -256,7 +256,7 @@
 				<div class="d-flex align-items-center mt-5">
 
 					<div class="d-flex flex-column">
-						<a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">John Doe</a>
+						<a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">Admin</a>
 						{{-- <div class="text-muted mt-1">Application Developer</div> --}}
 						<div class="navi mt-2">
 							<a href="#" class="navi-item">
@@ -276,7 +276,7 @@
 									</span>
 								</span>
 							</a>
-							<a href="" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
+							{{-- <a href="" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a> --}}
 						</div>
 					</div>
 				</div>

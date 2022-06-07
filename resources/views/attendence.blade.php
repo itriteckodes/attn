@@ -19,9 +19,12 @@
 <body>
     <img style="margin-top:60px"  src="{{asset('uos.png')}}" height="100"  width="120" alt="" srcset="">
         <h1>Attendence was marked</h1>
+        <h3> Farhan - BSIT 6th Reg</h3>
         <br>
         <p color="black">Attendence was marked on {{Carbon\Carbon::now()->format('d/m/Y')}}</p>
         <br>
 
 </body>
 </html>
+x
+axa
