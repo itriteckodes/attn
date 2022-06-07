@@ -35,7 +35,7 @@ Attendence
                     <td>{{$key+1}}</td>
                     <td>{{$attendence->student->name}}</td>
                     <td>{{$attendence->student->roll_no}}</td>
-                    <td>{{$attendence->time}}</td>
+                    <td>{{Carbon\Carbon::parse($attendence->time)->format('h:i A || d/m/Y')}}</td>
 
                     <td></td>
                 </tr>
