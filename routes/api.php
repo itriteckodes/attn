@@ -19,4 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::group(['namespace' => 'App\Http\Controllers\Api'], function () {
     Route::any('mark/attendence','AttendenceController@mark_attendence');
+    Route::any('create/intent','PaymentController@createPaymentIntent');
 });
