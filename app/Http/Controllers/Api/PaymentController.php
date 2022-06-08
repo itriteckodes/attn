@@ -9,11 +9,11 @@ use Stripe\PaymentIntent;
 use Stripe\Stripe;
 class PaymentController extends Controller
 {
-    public function createPaymentIntent(){
+    public function createPaymentIntent(Request $request){
 
         Stripe::setApiKey('sk_test_51JvIZ1Ey3DjpASZjmQpp61o9MDwfEnXHyZIbVE08CiJf3XxMKN93bOlu5MSxiw07yPJwX9kvDezuEugwSNZNkddy00ZCa33RpG');
         $paymentIntent = PaymentIntent::create([
-            'amount' => 500,
+            'amount' => $request->price * 100,
             'currency' => 'usd', // Replace with your country's primary currency
             'automatic_payment_methods' => [
                 'enabled' => true,
