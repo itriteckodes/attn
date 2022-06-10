@@ -11,7 +11,7 @@ class PaymentController extends Controller
 {
     public function createPaymentIntent(Request $request){
 
-        Stripe::setApiKey('sk_test_51JvIZ1Ey3DjpASZjmQpp61o9MDwfEnXHyZIbVE08CiJf3XxMKN93bOlu5MSxiw07yPJwX9kvDezuEugwSNZNkddy00ZCa33RpG');
+        Stripe::setApiKey('sk_test_51Epy7YEyVDCb4yfROYFHci7RMVgM5lZdeVIq4kgLnkUYYsZhV6Xw4cNOEHIPbf0r88CwfGDmV3vtmDfwdVjimbkZ007WEAmF99');
         $paymentIntent = PaymentIntent::create([
             'amount' => $request->price * 100,
             'currency' => 'eur', // Replace with your country's primary currency
